@@ -4,8 +4,8 @@ const router = express.Router()
 const { page } = require('../../miscellaneous/helper')
 
 const listUserDetails = (id) => {
-
-
+    
+    id = 1;
     if (typeof id !== 'number')
         return {}
 
