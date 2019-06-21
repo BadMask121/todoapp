@@ -52,6 +52,10 @@ const helper = {
         },
         success: 200
 
+    },
+    page: {
+        home: '/',
+        list: '/list'
     }
 
 }

@@ -1,11 +1,12 @@
 const express = require('express')
 const app = express()
 
+const { port } = require('./miscellaneous/helper')
+const { controller } = require('./routes/route')
 
-app.get('/s', function(req, res) {
-    res.send('dsd')
-    res.end()
-})
+app.use(controller.home)
+app.use(controller.list.router)
+    // app.use(controller.check)
 
-app.listen('5000')
+app.listen(port)
 console.log('listening');
