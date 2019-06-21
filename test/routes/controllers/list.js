@@ -10,7 +10,7 @@ const expect = require('chai').expect
 
 describe('Testing Our List Page', () => {
     it('can only accept numbers', () => {
-        let stringTest = listUserDetails('testing')
+        let stringTest = listUserDetails('dhd')
         let booleanTest = listUserDetails(1)
 
         assert.isObject(stringTest, "[message]");
